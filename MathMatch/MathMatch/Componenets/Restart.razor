@@ -1,0 +1,7 @@
+﻿@* @using Radzen *@
+@inherits Restart_razor
+
+
+
+<RadzenDropDown TValue="int" @bind-Value=@thisValue Data=@numOfCardsList Style="width: 100%; max-width: 400px;" />
+<RadzenButton Variant="Variant.Filled" ButtonStyle="ButtonStyle.Primary" Click="@UpdatePage">Start</RadzenButton>

@@ -1,0 +1,12 @@
+﻿@using MathMatch.Models;
+@using Radzen
+@inherits SumDisplay_razor;
+
+<RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Center" AlignItems="AlignItems.Start" Wrap="FlexWrap.Wrap">
+@foreach (SumCard card in CardGen.RandomSums)
+    {
+        <SumCardComponent CardValue="@card"></SumCardComponent>
+      
+    }
+</RadzenStack>
+

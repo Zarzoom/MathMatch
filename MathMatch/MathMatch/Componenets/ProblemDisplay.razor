@@ -1,0 +1,10 @@
+﻿@using MathMatch.Models;
+@using Radzen
+@inherits ProblemDisplay_razor
+
+<RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Center" AlignItems="AlignItems.Start" Wrap="FlexWrap.Wrap">
+@foreach (ProblemCard card in CardGen.MathProblems)
+    {
+        <ProblemCardComponent CardValue="@card"></ProblemCardComponent>
+    }
+</RadzenStack>

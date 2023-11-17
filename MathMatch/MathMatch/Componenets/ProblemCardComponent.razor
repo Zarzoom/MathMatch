@@ -1,0 +1,12 @@
+﻿
+@using Radzen
+@inherits ProblemCard_razor
+<div onclick="@selectCard" >
+    <RadzenCard Class= "@ClassValue()" Style="max-width: 210px; max-height: 210px; min-width: 210px; min-height: 210px;" Variant="Variant.Filled">
+        <RadzenStack Style="max-width: 210px; max-height: 210px; min-width: 210px; min-height: 210px;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Center">
+ 
+            <p>@CardValue.mathProblem</p>
+        </RadzenStack>
+    </RadzenCard>
+</div>
+
